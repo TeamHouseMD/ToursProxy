@@ -22,6 +22,10 @@
     /api/products/:product_id = /products or /products/:product_id
     /api/products/:product_id/questions = /products/:product_id/questions
 
+    MINE:
+    /tours/requests
+    /tours/agents
+
   The url key in each service object should correspond to the url of the service you are trying to
   proxy requests to. At the start these will point to servers running locally on your machine, but
   once you deploy onto AWS then you will need to update these urls to point to the ip addresses
@@ -42,23 +46,23 @@
 
 module.exports = {
   service1: {
-    api: 'FIX_ME',
+    api: ['/tours/requests', '/tours/agents'],
     url: 'http://localhost:3001',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
   service2: {
-    api: 'FIX_ME',
+    api: '/tours/requests',
     url: 'http://localhost:3002',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
   service3: {
-    api: 'FIX_ME',
+    api: '/tours/requests',
     url: 'http://localhost:3003',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
   service4: {
-    api: 'FIX_ME',
+    api: '/tours/requests',
     url: 'http://localhost:3004',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
 };
