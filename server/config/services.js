@@ -61,7 +61,7 @@ module.exports = {
     bundle: 'bundle.js',
   },
   service4: {
-    api: '/tours/requests',
+    api: '/home-description',
     url: 'http://localhost:3004',
     bundle: 'bundle.js',
   },
