@@ -51,13 +51,13 @@ module.exports = {
     bundle: 'bundle.js',
   },
   service2: {
-    api: '/tours/requests',
-    url: 'http://localhost:3002',
+    api: ['/similar-homes', '/similar-homes/favorites', 'new-listings', 'new-listing/favorites'],
+    url: 'http://52.15.94.24:3001/',
     bundle: 'bundle.js',
   },
   service3: {
-    api: '/tours/requests',
-    url: 'http://localhost:3003',
+    api: '/listings/:id',
+    url: 'http://54.219.143.193:3001/',
     bundle: 'bundle.js',
   },
   service4: {
