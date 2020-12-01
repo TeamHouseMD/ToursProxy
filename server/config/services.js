@@ -51,7 +51,7 @@ module.exports = {
     bundle: 'bundle.js',
   },
   service2: {
-    api: ['/similar-homes', '/similar-homes/favorites', 'new-listings', 'new-listing/favorites'],
+    api: ['/similar-homes', '/similar-homes/favorites', '/new-listings', '/new-listing/favorites'],
     url: 'http://52.15.94.24:3001/',
     bundle: 'bundle.js',
   },
