@@ -46,23 +46,23 @@
 
 module.exports = {
   service1: {
-    api: ['/tours/requests', '/tours/agents'],
-    url: 'http://localhost:3001',
+    api: ['/tours/:id/requests', '/tours/:id/agents'],
+    url: '54.215.124.91:3001',
     bundle: 'bundle.js',
   },
-  service2: {
-    api: ['/similar-homes', '/similar-homes/favorites', '/new-listings', '/new-listing/favorites'],
-    url: 'http://52.15.94.24:3001/',
-    bundle: 'bundle.js',
-  },
-  service3: {
-    api: '/listings/:id',
-    url: 'http://54.219.143.193:3001/',
-    bundle: 'bundle.js',
-  },
-  service4: {
-    api: '/home-description',
-    url: 'http://localhost:3004',
-    bundle: 'bundle.js',
-  },
+  // service2: {
+  //   api: ['/similar-homes', '/similar-homes/favorites', '/new-listings', '/new-listing/favorites'],
+  //   url: 'http://52.15.94.24:3001/',
+  //   bundle: 'bundle.js',
+  // },
+  // service3: {
+  //   api: '/listings/:id',
+  //   url: 'http://54.219.143.193:3001/',
+  //   bundle: 'bundle.js',
+  // },
+  // service4: {
+  //   api: '/home-description',
+  //   url: 'http://localhost:3004',
+  //   bundle: 'bundle.js',
+  // },
 };
