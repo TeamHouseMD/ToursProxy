@@ -47,7 +47,7 @@
 module.exports = {
   service1: {
     api: ['/tours/:id/requests', '/tours/:id/agents'],
-    url: 'http://54.193.2.134:3001',
+    url: 'http://172.31.12.31:3001',
     bundle: 'bundle.js',
   },
   // service2: {
